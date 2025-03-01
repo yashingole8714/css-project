@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University About Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f0fe;
+            color: #333;
+        }
+        .navbar {
+            background-color: #00274C;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            animation: slideDown 1s ease-in-out;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+            background-color: #1b1b1b;
+            color: white;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 10px;
+            transform: scale(0.8);
+            opacity: 0;
+            animation: popUp 1s ease-out forwards;
+        }
+        .section:nth-child(1) { animation-delay: 0.5s; }
+        .section:nth-child(2) { animation-delay: 1s; }
+        .section:nth-child(3) { animation-delay: 1.5s; }
+        @keyframes popUp {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .section h3 {
+            color: #00274C;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+            color: #555;
+        }
+        .footer {
+            background-color: #00274C;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">University of DMIHER </div>
+    <div class="content">
+        <h2>Welcome to the DMIHER University  </h2>
+        <p>A place with deep traditions focused on creating brighter futures. Our university provides world-class education, cutting-edge research opportunities, and a vibrant student life.</p>
+    </div>
+    <div class="sections">
+        <div class="section">
+            <h3>Facts & History</h3>
+            <ul>
+                <li>Accreditation: Recognized globally for excellence.</li>
+                <li>Annual Report: Transparency and accountability.</li>
+                <li>Diversity: A welcoming environment for all.</li>
+                <li>Facts & Figures: Over 50,000 students enrolled.</li>
+                <li>Famous Alumni: Leaders in various industries.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Schools & Colleges</h3>
+            <ul>
+                <li>All Schools & Colleges: A variety of disciplines.</li>
+                <li>Health System: Advanced medical programs.</li>
+                <li>Dearborn Campus: Innovation and technology hub.</li>
+                <li>Flint Campus: Community-focused learning.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Governance & Administration</h3>
+            <ul>
+                <li>Board of Regents: Ensuring strategic growth.</li>
+                <li>Office of the President: Leadership and vision.</li>
+                <li>Office of the Provost: Academic excellence.</li>
+                <li>Executive Offices: Supporting university operations.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 University of DMIHER. All rights reserved.</p>
+    </div>
+</body>
+</html>
